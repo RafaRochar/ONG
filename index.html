@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Inicial - Semente Coletiva</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+</head>
+
+<body>
+  <div class="menu-toggle" data-aos="fade-down">
+    <input class="mobile" id="checkbox" type="checkbox" />
+    <label for="checkbox" class="hamburger mobile">
+      <span class="mobile"></span>
+      <span class="mobile"></span>
+      <span class="mobile"></span>
+    </label>
+    <nav class="menu-superior">
+      <a href="index.html">
+        <h1>Semente Coletiva</h1>
+      </a>
+      <div></div>
+      <ul>
+
+        <li>
+          <a href="#projetos">
+            <h2>Projetos</h2>
+          </a>
+        </li>
+        <li>
+          <a href="#formulario">
+            <h2>Cadastro</h2>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <section>
+    <img src="img/ong.jpg"
+      alt="ãos unidas em união, vestindo blusas de lã coloridas. Uma mão central usa anéis. Fundo desfocado."
+      class="banner">
+    <div class="quem-somos">
+      <h1>Quem somos</h1>
+      <p data-aos="fade-up">
+        Somos a ONG Semente Coletiva, uma organização sem fins lucrativos dedicada a transformar realidades e fortalecer
+        comunidades vulneráveis em São Paulo. Acreditamos que a união faz a força e que cada gesto de cooperação gera um
+        impacto duradouro. Através de projetos educativos, apoio social e iniciativas de engajamento comunitário,
+        abrimos caminhos para um futuro mais justo e humano.
+        Venha conhecer nossas ações, participe como voluntário e faça parte desta corrente do bem! </p>
+      <a data-aos="fade-up" class="botao-link">Conheça mais sobre nossos projetos abaixo!</a>
+    </div>
+  </section>
+
+  <section id="projetos">
+
+    <div class="hero-section">
+      <h1>Projetos e Iniciativas da Semente Coletiva</h1>
+      <p>A página de projetos da Semente Coletiva foi desenhada para conectar você às nossas frentes de ação e mudar
+        para onde vão os esforços da nossa comunidade. Acreditamos que a transparência e o engajamento coletivo são os
+        pilares fundamentais para gerar mudanças sociais profundas e duradouras em São Paulo.</p>
+    </div>
+
+
+    <div id="frentes-atuacao">
+      <h2>Nossas Frentes de Atuação</h2>
+
+    </div>
+
+    <div class="call-to-action">
+      <h3>Faça Parte Desta Corrente do Bem</h3>
+      <p>O conhecimento das nossas frentes é apenas o primeiro passo. Se você deseja colocar a mão na massa e
+        transformar realidades junto com a gente, junte-se ao nosso time de colaboradores.</p>
+      <p><a href="#formulario" class="btn-cadastrar">Cadastre-se agora mesmo</a> para participar das nossas ações e
+        descubra como o seu talento pode mudar vidas!</p>
+    </div>
+
+  </section>
+
+  <section id="formulario">
+    <div class="cadastro-section" data-aos="fade-up">
+      <h1>Cadastre-se como voluntário</h1>
+      <p>Preencha o formulário abaixo para fazer parte da nossa rede de apoio e transformar vidas junto com a Semente
+        Coletiva.</p>
+
+      <div class="form-container">
+        <form action="#" method="POST">
+
+          <!-- Dados Pessoais -->
+          <fieldset id="user-details">
+            <legend>Dados Pessoais</legend>
+
+            <div class="form-group">
+              <label for="nome">Nome Completo:</label>
+              <input type="text" id="nome" name="nome" required minlength="3" placeholder="Digite seu nome completo"
+                class="input">
+            </div>
+
+            <div class="form-group">
+              <label for="cpf">CPF:</label>
+              <input type="text" id="cpf" name="cpf" required placeholder="000.000.000-00" minlength="14" maxlength="14"
+                class="input">
+            </div>
+
+            <div class="form-group">
+              <label for="nascimento">Data de Nascimento:</label>
+              <input type="date" id="nascimento" name="nascimento" required class="input">
+            </div>
+          </fieldset>
+
+          <!-- Informações de Contato -->
+          <fieldset id="contact-info">
+            <legend>Informações de Contato</legend>
+
+            <div class="form-group">
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" name="email" required placeholder="seu@email.com" class="input">
+            </div>
+
+            <div class="form-group">
+              <label for="telefone">Telefone / WhatsApp:</label>
+              <input type="tel" id="telefone" name="telefone" required placeholder="(00) 00000-0000" minlength="14"
+                maxlength="15" class="input">
+            </div>
+          </fieldset>
+
+          <fieldset id="address-info">
+            <legend>Endereço</legend>
+
+            <div class="form-group">
+              <label for="cep">CEP:</label>
+              <input type="number" id="cep" name="cep" required placeholder="00000-000" maxlength="9" minlength="9"
+                class="input">
+            </div>
+
+            <div class="form-group">
+              <label for="cidade">Cidade:</label>
+              <input type="text" id="cidade" name="cidade" required placeholder="Sua cidade" class="input">
+            </div>
+
+            <div class="form-group">
+              <label for="estado">Estado:</label>
+              <select id="estado" name="estado" required>
+                <option value="">Selecione o Estado</option>
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+                <!-- Outros estados podem ser adicionados conforme necessário -->
+              </select>
+            </div>
+          </fieldset>
+
+          <!-- Preferências de Voluntariado -->
+          <fieldset class="preferences">
+            <legend>Preferências de Atuação</legend>
+
+            <div class="form-group">
+              <label for="area-interesse">Área de Interesse:</label>
+              <select id="area-interesse" name="area-interesse" required>
+                <option value="">Selecione uma frente</option>
+                <option value="educacao">Educação para o Futuro</option>
+                <option value="alimentar">Apoio Alimentar e Nutricional</option>
+                <option value="comunitario">Desenvolvimento Comunitário</option>
+                <option value="administrativo">Apoio Administrativo / Geral</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <div class="form-actions">
+            <button type="submit" class="botao-link">Finalizar Cadastro</button>
+          </div>
+
+        </form>
+      </div>
+  </section>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4 class="footer-title">Sobre a ONG Semente Coletiva</h4>
+        <p class="footer-text">Transformando vidas e fortalecendo comunidades através de iniciativas colaborativas e
+          engajamento social.</p>
+      </div>
+
+      <div class="footer-section">
+        <h4 class="footer-title">Contato</h4>
+        <address>
+          <p>E-mail: <a href="mailto:contato@ongsolidaria.org">contato@sementecoletiva.org</a></p>
+          <p>Telefone: <a href="tel:+5511999999999">(11) 99999-9999</a></p>
+          <p>São Paulo - SP</p>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Semente Coletiva. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="js/projetos.js"></script>
+  <script src="js/formulario.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
